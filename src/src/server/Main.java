@@ -1,16 +1,12 @@
-package client;
+package server;
 
 import javax.swing.*;
 
-/**
- * Main class to create a JFrame and display the login panel.
- *
- * @author javiergs
- */
 public class Main extends JFrame {
 
     public Main() {
-        DrawArea drawArea = new DrawArea();
+        DrawArea drawArea = new DrawArea(this);
+        add(drawArea);
     }
 
     public static void main(String[] args) {
